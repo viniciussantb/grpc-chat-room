@@ -1,0 +1,25 @@
+{
+  "name": "grpc-chat-room",
+  "version": "1.0.0",
+  "description": "gRPC multi chat room",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciussantb/grpc-chat-room.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciussantb/grpc-chat-room/issues"
+  },
+  "homepage": "https://github.com/viniciussantb/grpc-chat-room#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.11",
+    "chalk": "^5.2.0",
+    "google-protobuf": "^3.21.2",
+    "grpc": "^1.24.11"
+  }
+}
