@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package chatguide;
+
+service ChatService {
+    rpc UserConnection(UserConnectionRequest) returns (Empty);
+    rpc ServerMessage(Empty) returns (ServerMessageResponse);
+    rpc UserMessage(UserMessageRequest) returns (Empty);
+}
+
+message Empty {}
+
+message UserConnectionRequest {
+    string userName = 1;
+}
+
+message ServerMessageResponse {
+    string serverMessage = 1;
+}
+
+message UserMessageRequest {
+    string userName = 1;
+    string userMessage = 2;
+}
